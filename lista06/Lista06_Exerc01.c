@@ -18,6 +18,7 @@
      5
 */
 
+/* algo */
 #include <stdio.h>
 
 int main() {
