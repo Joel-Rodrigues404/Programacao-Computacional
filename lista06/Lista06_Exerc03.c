@@ -1,6 +1,6 @@
 /* nome: joel anderson rodrigues */
 /* matricula: 571518 */
-/* questão: 01 */
+/* questão: 03 */
 /* data: 15/01/2025 */
 /* ambiente: linux */
 /* ferramenta: neovim */
@@ -16,6 +16,26 @@
 #include <stdio.h>
 
 int main() {
-    int l, c;
+    int l, c, num;
+
+    printf("Didite a quantidade de linhas e colunas da matriz: ");
+    scanf("%d %d", &l, &c);
+
+    int matriz[l][c];
+
+    for (int i = 0; i < l; i++) {
+        for (int j = 0; j < c; j++) {
+            printf("Digite o valor para a linha[%d] e coluna[%d]: ", i, j);
+            scanf("%d", &num);
+            matriz[i][j] = num;
+        }
+    }
+
+    for (int i = 0; i < l; i++) {
+        for (int j = 0; j < c; j++) {
+            printf("%d\t", matriz[i][j]);
+        }
+        printf("\n");
+    }
     return 0;
 }

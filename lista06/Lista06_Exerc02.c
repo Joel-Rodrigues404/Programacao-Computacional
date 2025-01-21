@@ -1,6 +1,6 @@
 /* nome: joel anderson rodrigues */
 /* matricula: 571518 */
-/* questão: 01 */
+/* questão: 02 */
 /* data: 15/01/2025 */
 /* ambiente: linux */
 /* ferramenta: neovim */
