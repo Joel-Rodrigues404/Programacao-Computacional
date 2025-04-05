@@ -36,8 +36,8 @@
 /* Lista de conectivos que não devem ser capitalizados */
 char *conectivos[] = {
     "de", "do", "dos", "da", "das", "a", "as", "o", "os", "ao", "aos",
-    "no", "nos", "na", "nas", "em", "por", "e", "sobre", "com", "até",
-    "após", "contra", "desde", "entre", "para", "sem", "sob", "nem",
+    "no", "nos", "na", "nas", "em", "por", "e", "sobre", "com", "ate",
+    "apos", "contra", "desde", "entre", "para", "sem", "sob", "nem",
     "que", "se", "mas", "ainda", "assim"};
 
 int num_conectivos = sizeof(conectivos) / sizeof(conectivos[0]); /* Número de conectivos */
@@ -46,6 +46,7 @@ int num_conectivos = sizeof(conectivos) / sizeof(conectivos[0]); /* Número de c
 void salvarTextoOriginal(const char *texto) {
     FILE *file = fopen(NOME_ARQUIVO, "w");
     if (file != NULL) {
+        printf("\nTexto Armanezado com Sucesso!\nTexto>> %s\n", texto);
         fprintf(file, "%s", texto);
         fclose(file);
     } else {
